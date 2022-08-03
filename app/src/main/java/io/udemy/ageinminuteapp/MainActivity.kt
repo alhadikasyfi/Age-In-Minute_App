@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                     "Year: $selectedYear, Month: ${selectedMonth+1}, days: $selectedDayofMonth",
                     Toast.LENGTH_SHORT).show()
                 tvSelectedDate.text = "$selectedDayofMonth/${selectedMonth + 1}/$selectedYear"
-
+                // untuk mengatur waktu
                 val sdf = SimpleDateFormat("dd/MM/yyy", Locale.ENGLISH)
                 val theDate = sdf.parse("$selectedDayofMonth/${selectedMonth + 1}/$selectedYear")
                 theDate?.let{ it ->
